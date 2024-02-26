@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import url("header.css");
+@import url("grid.css");
+/* CSS Document */
+
+html, body{
+	font-family: "Open Sans";
+	margin:0;
+	padding:0;
+}
+
+
+
+a{
+	color:hotpink;
+	text-decoration: none;
+}
+
+
+
+
+
+.blank{
+	height:100px;
+	width:auto;
+	color:#fff;
+}
+
+nav{
+	position: fixed;
+	padding:0px 0px 0px 0px;
+	right:60px;
+	top:16px;
+	width: 50%;
+	height: 100px;
+}
+
+nav ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+nav li{
+	float: right;
+	margin:0;
+}
+
+nav img{
+	margin: 10px 0px 5px 15px;
+}
+
+nav ul:after{
+	content:"";
+	clear: both;
+	display: block;
+}
+
+
+/*
+.row img{
+	display: block;
+	padding:0;
+	margin:0;
+	width:100%;
+	height:auto;
+}
+*/
+.quote{
+	width:100%;
+	margin:auto;
+	font-size: 2em;
+	text-align: center;
+	padding:40px;
+	font-weight: 800;
+	letter-spacing: -1px;
+	box-sizing: border-box;
+}
+
+.link{
+	width: 100%;
+	margin: auto;
+	height:360px;
+	background: #fff;
+	padding:40px 10px;
+	box-sizing: border-box;
+	text-align: center;
+	color:#000;
+	
+}
+
+.link_title{
+	font-size: 2em;
+	margin:40px;
+	font-weight: normal;
+}
+.link_btn{
+	width: 180px;
+	margin: auto;
+	text-align: center;
+	padding:20px;
+	border-radius:20px;
+	color:#fff;
+	background-color: hotpink;
+}
+
+
+/*BANNER*/
+.banner_d2{
+	text-align: center;
+	margin:auto;
+	padding:80px;
+	
+}
+
+.banner_d2 img{
+	margin:auto;
+	width:100px;
+	
+}
+.title_d2 {
+	font-size:2.2em;
+}
+.slogan_d2{
+	margin-top:40px;
+	font-size: 1em;
+}
+
+
+/*section*/
+section{
+	padding:100px 0px;
+}
+
+p{
+	
+	font-size:.8em;
+	color:rgb(120,120,120);
+	text-align: justify;
+	line-height: 1.5em;
+	font-weight:100;
+	margin-bottom:20px;
+	padding:0 10px;
+	
+}
+
+.section_title_s{
+	text-align: center;	
+	font-size:1em;
+	font-weight: 300;
+	letter-spacing: 5px;
+}
+.section_title_l{
+	text-align: center;
+	font-size:2.6em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin-bottom:20px;
+}
+
+.subsection_title_s{
+	text-align: center;	
+	font-size:.8em;
+	font-weight: 300;
+	letter-spacing: 5px;
+}
+
+.subsection_title_l{
+	text-align: center;
+	font-size:1.8em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin-bottom:20px;
+}
+
+/*GRAY BG SECTION*/
+.gray_bg{
+	background:#f2f2f2;
+	padding:100px 0px;
+}
+
+/*GRAY BOX*/
+.gray_box{
+	background:#f2f2f2;
+	padding:20px;
+	margin:40px 0px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	height:auto;
+		
+}
+
+
+/*SCENARIO PICS*/
+
+[class*="scenario_"]{
+	display: inline-block;
+	width:100%;
+	height:160px;
+	/* Add the blur effect */
+	/*filter: blur(8px);
+	-webkit-filter: blur(8px);*/
+
+	/* Full height */
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	
+	
+	
+	
+} 
+.scenario_1{
+	background-image:url(../images/startup/birthday.jpg);
+	
+}
+.scenario_2{
+	background-image:url(../images/startup/wedding.jpg);
+}
+.scenario_3{
+	background-image:url(../images/startup/concert.jpg);
+}
+.scenario_4{
+	background-image:url(../images/startup/beach-1836467_1920.jpg);
+}
+
+.scenario-text{
+
+	z-index: 1000;
+	text-align: center;
+	color:#fff;
+	font-weight:700;
+	letter-spacing: 2px;
+	position:relative;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+
+/*POST MOCKUP*/
+.bgblock
+{
+	width:100%;
+	height:840px;
+	background-image: url(../images/startup/Posts-mockup-trim.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+    background-size: 60%;
+
+}
+
+/*HORIZONTALLY ALIGN*/
+.htext{
+	position:relative;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.htext_container{
+	width:100%;
+	height:540px;
+}
+
+/*LEFT-BOTTOM BLOCK*/
+.lbblock{
+	width:50%;
+	padding:0;
+	position:relative;
+	left:5px;
+	top: 500px;
+}
+
+/*AWARD*/
+.award{
+	padding:20px;
+	position: relative;
+	float:left;
+	box-sizing: border-box;	
+	margin:auto;
+	display:block;
+	left:50%;
+	transform:translate(-50%,0);
+	border:1px solid rgba(0,0,0,0);
+
+}
+
+.award img{
+	height:60px;
+	padding:10px;
+	float: left;
+
+}
+
+.award ul{
+	float: left;
+	padding:0;
+	
+}
+.award li{
+	list-style:none;
+}
+
+.award_title{
+	color:black;
+	text-align: center;
+}
+.award_subtitle{
+	font-size:.8em;
+	color:#999;
+	text-align: center;
+}
+
+
+/* TABLET */
+@media only screen and (min-width : 768px ){
+	.award_title{
+		text-align:left;
+	}
+	.award_subtitle{
+		text-align: left;
+	}
+	
+
+	
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1200px){
+	.award_title{
+		text-align:left;
+	}
+	.award_subtitle{
+		text-align: left;
+	}
+
+}

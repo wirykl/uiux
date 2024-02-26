@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{		/*'*'所有東西都要套用這些設定*/
+	padding:0;
+	margin:0;
+	box-sizing: border-box;		/*利用box-sizing地方，僵直設定為border-box，則每個區塊將不受內容及其Padding影響寬度*/
+}
+
+html, body{
+	font-family: "Open Sans";
+}
+
+header{
+	padding:30px 50px;
+	border-top: solid 5px #000;
+	background:#fff;
+	box-sizing:border-box;
+	position: relative;
+}
+
+
+nav{
+	width:100%;
+	margin:auto;
+	background:#000;
+	text-align:left;
+	padding:5px 0px;
+	display:none;		/*手機版的時候隱藏*/
+}
+
+nav ul{
+	margin:0;
+}
+
+nav ul li{
+	display:block;
+	padding: 10px 0px;
+	background:#F7C6C9;
+
+	border-top:solid #666 1px;
+}
+
+nav ul li a{
+	font-weight:lighter;
+	color:#fff;
+	text-decoration:none;
+	padding:0px 30px;
+}
+
+nav ul li a:hover{
+	color:#80A1D1;
+}
+
+
+
+footer{
+	text-align:center;
+	padding:20px;
+}
+
+p{
+	padding:16px 0px 16px 0px;
+	font-size: 16px;
+	line-height: 24px;
+	color:#333;
+	
+}
+a {
+    color: hotpink;
+	text-decoration: none;
+}
+
+.row img{
+	width:100%;	
+}
+/*
+header img{
+	max-width:100%;
+	height:auto;
+	}
+*/
+.menu{
+	width:30px;
+	height:30px;
+	background:url(../images/menu.png);
+	display:block;
+	position:absolute;
+	right:20px;
+	top:30px;
+	}
+	
+.menu:hover{
+	cursor:pointer;
+	}
+
+.thumbnail{
+	float:left;
+	margin:5px;
+	width:80px;
+	height:80px;
+	overflow:hidden;	
+	}
+._p img{		/*portrait img*/
+	width:100%;
+	height:auto;
+}
+
+._l img{	/*landscape img*/
+	height:100%;
+	width:auto;
+	}
+/*CONTACT INFO LIST*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+	padding-right: 16px;
+}
+
+/*===============RWD details===============*/
+/*把RWD的設定寫在最後面*/
+
+.row:after {		/*一個row跟一個row之間會分別獨立*/
+    content: "";
+	padding-bottom:24px;
+    clear: both;
+    display: block;
+}
+
+/* For phone */
+[class*="col-"] {		/*所有class當中名稱帶有"col-"的區塊皆為浮動*/
+    float: left;
+    padding: 15px;
+	width: 100%;		/*for手機的情況，手機上所有區塊的寬度都設為100%*/
+}
+
+@media only screen and (min-width: 768px){
+	/*for tablets*/
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+	
+	nav{
+		display: block;
+		padding: 20 0px;
+		}
+	nav ul li{
+		display: inline;
+		background: #000;
+		border-top: 0px;		/*桌機和平板不需要加線*/
+		}
+	nav ul li a:hover{
+		color:#F7C6C9;
+		}
+
+	.menu{
+		display:none;
+		}
+	header img{
+		max-width:200px;
+		}
+}
+
+@media only screen and (min-width: 1200px){
+	/*for desktop*/
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+	nav{
+		display: block;
+		padding: 20 0px;
+		background: #000;
+		}
+	nav ul li{
+		display: inline;
+		background: #000;
+		border-bottom: 0px;		/*桌機和平板不需要加線*/
+		}
+	nav ul li a:hover{
+		color:#F7C6C9;
+		}
+	.menu{
+		display:none;
+		}
+	header img{
+		max-width:200px;
+		}
+
+
+}
